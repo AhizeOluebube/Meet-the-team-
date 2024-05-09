@@ -1,0 +1,80 @@
+#root {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+.arrow {
+  width: 25px;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.colored-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .colored-img {
+  opacity: 1;
+}
+button {
+  background-color: whitesmoke;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.body {
+  background-color: #292d32;
+}
+.logo {
+  background-color: #ffffff0d;
+  width: 30px;
+}
+.foot p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.option {
+  transition: 0.3s ease-in-out;
+}
+.option:hover {
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+.bg-elements {
+  background-color: whitesmoke;
+  z-index: 2;
+  left: 50%;
+  top: 75%;
+}
+
+li {
+  list-style: none;
+}
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.btn2 {
+  right: 0;
+  top: 0;
+}
+@media (width > 768px) {
+  ul {
+    right: 0;
+    left: unset;
+  }
+}
